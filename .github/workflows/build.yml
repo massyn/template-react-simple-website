@@ -18,13 +18,12 @@ jobs:
 
       - name: Use Node.js
         uses: actions/setup-node@v2
-        with:
-          node-version: '16' # Ensure compatibility with your project
 
       - name: Install dependencies and build
         run: |
           npm ci
-          npm run build
+          npm run build --if-present
+          ls -la
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -32,7 +31,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist' # Ensure this matches the output directory of your build
+          path: './build'
 
       - name: Deploy to GitHub Pages
         id: deployment
