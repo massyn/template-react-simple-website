@@ -1,5 +1,6 @@
 {
   "name": "template-react-simple-website",
+  "homepage": "https://massyn.github.io/template-react-simple-website/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
