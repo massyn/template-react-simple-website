@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+See the result [here](https://massyn.github.io/template-react-simple-website/)
+
 ## Available Scripts
 
 In the project directory, you can run:
